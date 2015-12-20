@@ -7,13 +7,13 @@ INSERT INTO nicks (host, nick, registeredp)
 VALUES (:host, :nick, :registeredp);
 
 -- name: insert-username<!
-INSERT INTO usernames (nick, username)
-VALUES (:nick, :username);
+INSERT INTO usernames (host, nick, username)
+VALUES (:host, :nick, :username);
 
 -- name: insert-realname<!
-INSERT INTO realnames (nick, realname)
-VALUES (:nick, :realname);
+INSERT INTO realnames (host, nick, realname)
+VALUES (:host, :nick, :realname);
 
--- name: insert-channels<!
-INSERT INTO channels (nick, channel)
-VALUES (:nick, :channel);
+-- name: insert-channel<!
+INSERT INTO channels (host, nick, channel)
+VALUES (:host, :nick, :channel);

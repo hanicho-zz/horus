@@ -5,10 +5,10 @@ WHERE host = :host;
 
 -- name: update-tlsp<!
 UPDATE hosts
-SET tlsp = :tlsp
+SET tlsp = True
 WHERE host = :host;
 
 -- name: update-registeredp<!
 UPDATE nicks
-SET registeredp = :registeredp
+SET registeredp = True
 WHERE host = :host AND nick = :nick;

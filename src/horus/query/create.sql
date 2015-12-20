@@ -8,24 +8,27 @@ CREATE TABLE hosts (
 -- name: create-nicks!
 CREATE TABLE nicks (
        host varchar(255) NOT NULL,
-       nick varchar(10) NOT NULL,
+       nick varchar(50) NOT NULL,
        registeredp boolean DEFAULT False
 );
 
 -- name: create-usernames!
 CREATE TABLE usernames (
-       nick varchar(10) NOT NULL,
+       host varchar(255) NOT NULL,
+       nick varchar(30) NOT NULL,
        username varchar(10) NOT NULL
 );
 
 -- name: create-realnames!
 CREATE TABLE realnames (
-       nick varchar(10) NOT NULL,
+       host varchar(255) NOT NULL,
+       nick varchar(30) NOT NULL,
        realname varchar(50) NOT NULL
 );
 
 -- name: create-channels!
 CREATE TABLE channels (
-       nick varchar(10) NOT NULL,
+       host varchar(255) NOT NULL,
+       nick varchar(30) NOT NULL,
        channel varchar(35) NOT NULL
 );
